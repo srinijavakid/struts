@@ -1,0 +1,13 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+	<package name="test" extends="struts-default">
+		<action name="TestLogger" class="com.tutorials4u.interceptor.TestLoggerAction">
+			<interceptor-ref name="logger" />
+			<result name="success">/success.jsp</result>
+		</action>
+	</package>
+</struts>
